@@ -18,13 +18,6 @@ while ( arrGalleryArtMain.length !== n ){
         arrGalleryArtMain.push(randomN)
     }
 }
-// console.log(arrGalleryArtMain)
-// let arrGalleryArt01 = arrGalleryArtMain.slice(0,5)
-// let arrGalleryArt02 = arrGalleryArtMain.slice(5,10)
-// let arrGalleryArt03 = arrGalleryArtMain.slice(10)
-// console.log(arrGalleryArt01)
-// console.log(arrGalleryArt02)
-// console.log(arrGalleryArt03)
 
 // сколько будет картинок в каждой колонке галлереи
 const array_size = 5;
@@ -34,25 +27,10 @@ let randomGalleryArray = [];
 for (let i = 0; i <arrGalleryArtMain.length; i += array_size) {
     randomGalleryArray.push(arrGalleryArtMain.slice(i, i + array_size));
 }
-// console.log(randomGalleryArray);
 
 let galleryArt = document.querySelector(".picture-inner-container")
 arrGalleryArtMain.forEach( item => (
     galleryArt.innerHTML += `
-    <img src="assets/img/gallery/galery${item}.jpg" alt="img-gallery${item}">
+    <img src="assets/img/gallery/galery${item}.jpg" loading="lazy" alt="img-gallery${item}">
 `
 ))
-
-// let galleryArt = document.querySelector(".picture-container")
-// randomGalleryArray.forEach( item => {
-//     let div = document.createElement('div')
-//     div.className = 'picture-inner-container'
-//     galleryArt.append(div)
-//     item.forEach ( item =>{
-//         div.innerHTML += `
-//         <img src="assets/img/gallery/galery${item}.jpg" alt="img-gallery${item}">
-//     `
-//     })
-// })
-
-// console.log(galleryArt)

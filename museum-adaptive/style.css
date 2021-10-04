@@ -5,9 +5,7 @@ html{
 }
 body{
     max-width: 1920px;
-    /*min-width: 100%;*/
     margin: auto;
-    /*scroll-behavior: smooth;*/
 }
 @font-face {
     font-family: Roboto;
@@ -79,7 +77,6 @@ header{
 }
 
 .header-container nav{
-    /*max-width: 720px;*/
 }
 
 .logo{
@@ -88,7 +85,6 @@ header{
     filter: brightness(60%);
     cursor: pointer;
 }
-/*color: var(--color-gold);*/
 .logo:hover {
     filter: brightness(100%);
 
@@ -115,7 +111,6 @@ header{
 
 .header-container li{
     font-size: var(--fsize22);
-    /*line-height: 50px;*/
     color: #FFFFFF;
     list-style: none;
     padding-right: 57px;
@@ -145,7 +140,6 @@ header{
     line-height: 90px;
     letter-spacing: 5px;
     color: #FFFFFF;
-    /*text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 .section-title-gold{
     color: var(--font-gold);
@@ -226,7 +220,6 @@ header{
 .slider-wrapper{
     padding-bottom: 60px;
     overflow: hidden;
-    /*cursor: pointer;*/
 }
 .slider-wrapper .slider:before {
     z-index: 9;
@@ -238,7 +231,6 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    /*background: transparent;*/
     opacity: 0.8;
     /*тень в секции  welcome я сделал через ::before*/
     background-image : linear-gradient(to left, rgba(0,0,0, 0.0), rgba(0,0,0, 1) 100%);
@@ -247,20 +239,17 @@ header{
 .fadeLeft {
     max-width: 100%;
     position: relative;
-    /*animation: topOut 1s ease-in;*/
     animation: leftOut 1s ease-in;
 }
 
 .fadeRight {
     max-width: 100%;
     position: relative;
-    /*animation: topOut 1s ease-in;*/
     animation: rightIn 1s ease-in;
 }
 .fade {
     max-width: 100%;
     position: relative;
-    /*animation: topOut 1s ease-in;*/
     animation: topOut 1s ease-in;
 }
 .fadeOut {
@@ -399,7 +388,6 @@ to{
 .vr-card:hover{
     transition: 2s;
     transform: scale(1.05);
-    /*transform: scaleX(2);*/
 
 }
 .vr-card:hover .line{
@@ -421,15 +409,6 @@ to{
     line-height: 35px;
     letter-spacing: 5px;
 }
-/*.vr-card h3:after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: -9px;*/
-/*    left: 0;*/
-/*    width: 300px;*/
-/*    height: 2px;*/
-/*    background-color: rgba(113, 7, 7, 1);*/
-/*}*/
 
 .vr .line{
     margin-top: 9px;
@@ -483,44 +462,26 @@ to{
 }
 
 .explore-slider{
-    /*display: block;*/
     position: relative;
     margin-top: 15px;
 }
 
-/*div.clearfix:after{*/
-/*    content: "";*/
-/*    display: block;*/
-/*    clear: both;*/
-/*}*/
 .img-after{
     position: absolute;
-    /*clip: rect(0px,60px,200px,0px);*/
-    /*clip-path: inset(0 0 0 420px);*/
 
 }
 .img-before{
     position: relative;
     clip-path: inset(0 0 0 440px);
 }
-.section-explore img{
-    /*padding-top: 15px;*/
-}
 .explore-btn{
     position: absolute;
-    /*z-index: 1;*/
-    /*top: 0;*/
     left: 420px;
     cursor: pointer;
 }
-/*.explore-btn:hover{*/
-/*    filter: invert(57%) sepia(41%) saturate(293%) hue-rotate(356deg) brightness(87%) contrast(87%);*/
-
-/*}*/
 
 .section-video .container{
     margin-top: 75px;
-
     padding-top: 0;
 }
 .section-video-text{
@@ -536,7 +497,6 @@ to{
     font-weight: lighter;
     font-size: 22px;
     line-height: 38px;
-    /*align-items: center;*/
 }
 .video-player{
     margin-top: 75px;
@@ -559,9 +519,6 @@ to{
     cursor: pointer;
 
 }
-/*.video-control input{*/
-/*    margin-right: 41px;*/
-/*}*/
 .video-control .volume{
     margin-right: 4px;
 }
@@ -576,30 +533,6 @@ to{
 .volume-range{
     width: 155px;
 }
-
-/*можно уба=рать ниже*/
-/* Специальные правила для браузеров на движках WebKit/Blink */
-
-/*.rewind-video{*/
-/*    overflow: hidden;*/
-/*    width: 929px;*/
-/*    -webkit-appearance: none;*/
-/*    background-color: #710707;*/
-/*}*/
-/*.rewind-video::-webkit-slider-runnable-track {*/
-/*    height: 10px;*/
-/*    -webkit-appearance: none;*/
-/*    color: #c4c4c4;*/
-/*    margin-top: -1px;*/
-/*}*/
-
-/*.rewind-video::-webkit-slider-thumb {*/
-/*    width: 10px;*/
-/*    -webkit-appearance: none;*/
-/*    height: 10px;*/
-/*    cursor: ew-resize;*/
-/*    background: #c4c4c4;*/
-/*}*/
 
 
 /* изменение цвета инпута реализовано через js video-player.js */
@@ -673,7 +606,6 @@ to{
 .play-list-slider{
     display: flex;
     position: relative;
-    /*left: -493px;*/
     left: 0;
     transition: all ease 2s;
 }
@@ -703,11 +635,9 @@ to{
 }
 .video-slider-nav div:first-child {
     display: flex;
-    /*cursor: pointer;*/
 }
 .video-slider-nav div:last-child{
     display: flex;
-    /*cursor: pointer;*/
 }
 .video-slider-dots{
     display: flex;
@@ -722,7 +652,6 @@ to{
     background-color: var(--color-grey);
     border-radius: 50%;
     margin: 0 25px 0 0;
-    /*cursor: pointer;*/
 
 }
 .picture-container{
@@ -747,15 +676,11 @@ to{
 }
 .section-gallery .picture-inner-container{
     columns: 3;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: flex-start;*/
-    /*flex-wrap: wrap;*/
     margin-top: 75px;
 }
 
 .picture-inner-container img{
-    width: 456px;
+    width: 100%;
     margin-bottom: 24px;
 }
 
@@ -779,7 +704,7 @@ to{
 }
 
 .ticket-buy .ticket-type{
-    margin-right: 244px;
+    /*margin-right: 244px;*/
 }
 
 .ticket-type{
@@ -861,7 +786,6 @@ input:checked + .style-radio:before {
 }
 
 .amount{
-    /*float: right;*/
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -869,7 +793,6 @@ input:checked + .style-radio:before {
 .amount p{
     margin-top: 6px;
     margin-bottom: 15px;
-    /*align-self: flex-start;*/
     font-weight: var(--fweight300);
     font-size: 22px;
     line-height: 26px;
@@ -898,8 +821,6 @@ input:checked + .style-radio:before {
 .basic button, .senior button, .basic input, .senior input {
     text-align: center;
     border: none;
-    /*color: #FFFFFF;*/
-    /*background-color: #030303;*/
 
 }
 .basic button, .senior button{
@@ -928,10 +849,8 @@ input:checked + .style-radio:before {
 
 .amount-count input::-webkit-outer-spin-button,
 .amount-count input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0;
-    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .amount .buy-now{
@@ -954,18 +873,10 @@ input:checked + .style-radio:before {
 .amount .buy-now:focus {
     outline: none;
 }
-/*.buy-now:hover{*/
-/*    background-color: orangered;*/
-
-/*}*/
 
 .parallax, .parallax2 , .parallax3 {
-    /*!* The image used *!*/
-    /*background-image: url("assets/img/003.jpg");*/
-
     /* Set a specific height */
     height: 100%;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -980,11 +891,9 @@ input:checked + .style-radio:before {
     background-image: url("assets/img/006.jpg");
 }
 .parallax3 {
-    /*background-image: url("assets/img/Louvre.jpg") no-repeat;*/
     width: 100%;
-    /*background: center url(assets/img/parallax.jpg) no-repeat;*/
     height: 400px;
-    background: url("assets/img/Louvre.jpg") no-repeat fixed center;
+    background: url("assets/img/parallax.jpg") no-repeat fixed center;
     background-size: cover;
 
 }
@@ -998,14 +907,12 @@ input:checked + .style-radio:before {
 }
 .contact-info h4{
     font-weight: bold;
-    /*font-size: 28px;*/
     font-size: var(--fsize28);
     line-height: 33px;
     margin-bottom: 50px;
 }
 
 .contact-info p{
-    /*font-size: 22px;*/
     font-size: var(--fsize22);
     line-height: 26px;
     margin-bottom: 26px;
@@ -1016,12 +923,14 @@ input:checked + .style-radio:before {
     font-weight: var(--fweightLighter);
     line-height: 26px;
     margin-bottom: 25px;
-    /*padding-bottom: 20px;*/
 }
 .contact-map{
-    display: none;
+    /*display: none;*/
 }
-
+.contact-map iframe {
+    width: 960px;
+    height: 620px;
+}
 footer{
     background-color: #030303;
 }
@@ -1063,7 +972,6 @@ footer .footer-nav{
     font-style: normal;
     font-weight: 200;
     line-height: 26px;
-    /* identical to box height */
 
 }
 .footer-nav li{
@@ -1073,7 +981,7 @@ footer .footer-nav{
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    margin-left: 247px;
+    /*margin-left: 247px;*/
     margin-bottom: 24px;
 }
 
@@ -1125,8 +1033,6 @@ footer .footer-nav{
 
     body{
         min-width: 1024px;
-        /*max-width: 1024px;*/
-        /*max-width: 100%;*/
         margin: 0 auto;
     }
     header nav{
@@ -1321,9 +1227,6 @@ footer .footer-nav{
     }
     .deck1024{
         display: block;
-
-        /*padding-top: 25px;*/
-
     }
     .explore-slider {
         margin-top: 62px;
@@ -1336,7 +1239,6 @@ footer .footer-nav{
     }
     .video-player{
         width: 984px;
-        /*height: 504px;*/
         margin-top: 40px;
 
     }
@@ -1360,7 +1262,6 @@ footer .footer-nav{
         width: 300px;
         height: 170px;
         padding-right: 41px;
-        /* position: relative; */
     }
     .rewind-video {
         width: 564px;
@@ -1508,8 +1409,6 @@ footer .footer-nav{
 @media (max-width: 768px) {
     body{
         min-width: 768px;
-        /*max-width: 1024px;*/
-        /*max-width: 100%;*/
         margin: 0 auto;
     }
     .container{
@@ -1543,7 +1442,6 @@ footer .footer-nav{
         font-weight: normal;
         font-size: 40px;
         line-height: 60px;
-        /*text-align: center;*/
         letter-spacing: 5px;
     }
     .section-welcome p {
@@ -1700,7 +1598,6 @@ footer .footer-nav{
         width: 354px;
         height: 199px;
         padding-right: 20px;
-        /* position: relative; */
     }
     .video-slider iframe{
         width: 354px;
@@ -1821,11 +1718,7 @@ footer .footer-nav{
     .section-welcome .burger-nav li{
         padding-left: 55px;
     }
-    /*.section-welcome a {*/
-    /*    padding: 55px;*/
-    /*}*/
     .pop-img-768{
-        /*display: block;*/
         margin-top: 17px;
         padding-left: 55px;
         display: flex;
@@ -1865,8 +1758,6 @@ footer .footer-nav{
 @media (max-width: 420px) {
     body{
         min-width: 420px;
-        /*max-width: 1024px;*/
-        /*max-width: 100%;*/
         margin: 0 auto;
     }
     .container{
@@ -1874,7 +1765,6 @@ footer .footer-nav{
     .flex-wrapper {
         position: relative;
         width: 380px;
-        /*height: 285px;*/
     }
     .slider img {
         width: 380px;
@@ -1941,7 +1831,6 @@ footer .footer-nav{
         HEIGHT: 368PX;
     }
     .section-explore img {
-        /*width: 380PX;*/
         height: 368PX;
     }
     .img-before {

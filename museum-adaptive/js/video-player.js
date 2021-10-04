@@ -27,6 +27,6 @@ function togglePlay() {
     video = player.querySelector('.player-video');
     const method = video.paused ? 'play' : 'pause';
     video[method]()
-    console.log(video[method]())
+    // console.log(video[method]())
     method === 'play' ? bigButtonPlay.style.display = 'none' : bigButtonPlay.style.display = ''
 }

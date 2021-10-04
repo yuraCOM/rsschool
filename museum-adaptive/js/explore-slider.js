@@ -2,7 +2,6 @@
 const exploreBtn = document.querySelector('.explore-btn')
 const exploreSlider = document.querySelector('.explore-slider')
 const imgBefore = document.querySelector('.img-before')
-// console.log(imgBefore)
 
 exploreBtn.addEventListener('mousedown', mouseTouchDown, false);
 

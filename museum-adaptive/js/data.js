@@ -26,27 +26,6 @@ let vrCardArr = [
     },
 ]
 
-// let videoPlayList = [
-//     {
-//         id: "4",
-//         srs: 'https://www.youtube.com/embed/2OR0OCr6uRE',
-//     },
-//     {
-//         id: "0",
-//         srs: "https://www.youtube.com/embed/zp1BXPX8jcU",
-//     },
-//     {
-//         id: "1",
-//         srs: 'https://www.youtube.com/embed/Vi5D6FKhRmo',
-//     }, {
-//         id: "2",
-//         srs: 'https://www.youtube.com/embed/NOhDysLnTvY',
-//     }, {
-//         id: "3",
-//         srs: 'https://www.youtube.com/embed/aWmJ5DgyWPI',
-//     },
-//
-// ]
 
 let videoPlayList = [
     {   id: "0",
