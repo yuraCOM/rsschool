@@ -1,0 +1,16 @@
+/*#video-player-screen-frame{*/
+/*    width: 1440px;*/
+/*    height: 650px;*/
+/*}*/
+/*.html5-video-player> .ytp-large-play-button{*/
+/*        display: none;*/
+
+/*}*/
+
+/*.ytp-large-play-bucctton svg   {*/
+/*    !*display: none;*!*/
+/*}*/
+
+.ytp-large-play-button{
+    display: none;
+}
