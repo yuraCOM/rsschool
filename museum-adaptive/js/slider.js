@@ -95,11 +95,11 @@ for ( let i = 0; i < dots.length; i++){
 
 //очистка слайд-шоу и заново запуск через время
 function clearIntervalSlider(){
-    console.log('end slide show')
+    // console.log('end slide show')
     clearInterval(timeSl)
     setTimeInterval = 10000
     timeSl = setInterval(nextSlide, setTimeInterval)
-    console.log('start NEW slider show 10sec')
+    // console.log('start NEW slider show 10sec')
 }
 
 //****************************
@@ -111,7 +111,7 @@ function handTouchStart(event) {
     let firstTouch = event.touches[0]
     x1 = firstTouch.clientX
     y1 = firstTouch.clientY
-    console.log(x1, y1)
+    // console.log(x1, y1)
 }
 function handTouchMove(event) {
 
@@ -147,7 +147,6 @@ function handleTouchStart(evt) {
     const firstTouch = getTouches(evt)[0];
     xDown = firstTouch.clientX;
     yDown = firstTouch.clientY;
-    console.log(xDown)
 }
 
 function handleTouchMove(evt) {
@@ -159,7 +158,6 @@ function handleTouchMove(evt) {
     let yUp = evt.touches[0].clientY;
 
     let xDiff = xDown - xUp;
-    console.log(xDiff)
     let yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
@@ -205,8 +203,8 @@ function mouseTouchDownSlider2(event) {
     let shiftX = event.clientX
     let shiftY = event.clientX
 
-    console.log('Нажатие X', shiftX)
-    console.log('Y', shiftY)
+    // console.log('Нажатие X', shiftX)
+    // console.log('Y', shiftY)
 
     sliderImg.addEventListener('mousemove', onMouseMove);
     sliderImg.addEventListener('mouseup', onMouseUp);

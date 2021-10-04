@@ -4,53 +4,8 @@ let louvreSite = `https://louvre-museum.tickets-paris.fr/`
 
 logo.onclick = function(){
     window.open(louvreSite)
-    // logo.style.color = 'var(--color-gold)'
     logoP.style.color = 'var(--color-gold)'
 }
-
-
-// let vrCardArr = ['Royal Palace', 'Denon Wing', 'Colonnade Perrault', 'Greek hall', 'Mona Lisa', 'Night Palace']
-// console.log(vrCardArr)
-
-//перенес в data.js
-// let vrCardArr = [
-//     {
-//         place : "Royal Palace",
-//         http : "https://goo.gl/maps/Yt9eNHZqZGeJL9Wa9"
-//     },
-//     {
-//         place : 'Denon Wing',
-//         http : "https://goo.gl/maps/MT9gw4W4NBVTpDoKA"
-//     },
-//     {
-//         place : 'Colonnade Perrault',
-//         http : "https://goo.gl/maps/kEePSTpCtoZzjwjo9"
-//     },
-//     {
-//         place : 'Greek hall',
-//         http : "https://goo.gl/maps/kBoBZRm59AYoGVuq5"
-//     },
-//     {
-//         place : 'Mona Lisa',
-//         http : "https://goo.gl/maps/5jGxo9oLitQVBf1Z8"
-//     },
-//     {
-//         place : 'Night Palace',
-//         http : "https://goo.gl/maps/uoCEJ8ZcV1kuVGtF8"
-//     },
-// ]
-
-// vrCardArr.forEach( item => {
-//     console.log(item)
-//     vrCard.innerHTML += `
-//          <div class="vr-card">
-//             <a href="${item.http}"> <img src="./assets/img/vr0${vrCardArr.indexOf(item)+1}.jpg" alt=""></a>
-//             <h3 class="style-title">${item.place}</h3>
-//             <h4>360° Virtual Tour</h4>
-//             <p>Google Street Panorama View</p>
-//          </div>
-//     `
-// })
 
 let vrCard = document.querySelector('.vr')
 
@@ -86,6 +41,7 @@ burgerMenu.addEventListener('click', ()=>{
         popMenuWelcome.style.left = -1000 + 'px'
     }
 })
+
 popMenuWelcome.addEventListener('click', ()=>{
     closeBurgerMenu()
 })
@@ -100,3 +56,97 @@ function closeBurgerMenu() {
     welcomeInfo.style.opacity = 1
     popMenuWelcome.style.left = -1000 + 'px'
 }
+
+console.log(`
+Ваша оценка - 136 баллов 
+Отзыв по пунктам ТЗ:
+Частично выполненные пункты:
+1) Секция Video 
+
+2) Секция Tickets 
+
+3) Секция Video 
+
+4) Секция Tickets 
+
+5) Секция Video 
+
+6) Секция Tickets 
+
+7) Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки,  элементы не должны скрываться, обрезаться, наезжать друг на друга, если это не предусмотрено макетом. 
+
+8) слайдера сравнения изображений в секции \`Explore\` 
+
+9) кастомного видеоплеера в секции \`Video\` 
+
+10) слайдера в секции \`Video\` 
+
+11) YouTube-видео в плейлисте в секции \`Video\`, маленькие видео выровнены по краям большого 
+
+12) при клике по ссылке в адаптивном меню, или при клике по любому месту сайта, кроме самого адаптивного меню, меню закрывается 
+
+13) Результат проверки скорости сайта для мобильных устройств: 0 to 49 (red): Poor - не выполнено 0 ,баллов; 50 to 89 (orange): Needs Improvement - частично выполнено - 4 баллов; 90 to 100 (green): Good - выполнено полностью - 8 баллов 
+
+Выполненные пункты:
+1) Блок header 
+
+2) Секция Welcome 
+
+3) Секция Visiting 
+
+4) Секция Explore 
+
+5) Секция Gallery 
+
+6) Форма покупки билетов 
+
+7) Секция Contacts 
+
+8) Блок footer  
+
+9) Блок header 
+
+10) Секция Welcome 
+
+11) Секция Visiting 
+
+12) Секция Explore 
+
+13) Секция Gallery 
+
+14) Форма покупки билетов 
+
+15) Секция Contacts 
+
+16) Блок footer  
+
+17) Блок header 
+
+18) Секция Welcome 
+
+19) Секция Visiting 
+
+20) Секция Explore 
+
+21) Секция Gallery 
+
+22) Форма покупки билетов 
+
+23) Секция Contacts 
+
+24) Блок footer  
+
+25) слайдера в секции \`Welcome\` 
+
+26) галереи изображений и изображений в ней 
+
+27) карты 
+
+28) при нажатии на бургер-иконку меню появляется, плавно выдвигаясь слева, бургер-иконка изменяется на крестик. При нажатии на крестик меню исчезает, плавно возвращаясь назад, иконка крестика превращается в бургер-иконку 
+
+29) ссылки в меню работают, обеспечивая плавную прокрутку по якорям 
+
+30) вёрстка меню соответствует макету на всех проверяемых разрешениях 
+
+
+`)

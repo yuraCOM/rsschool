@@ -247,7 +247,6 @@ div.pop-reg-header p{
     color: #272727;
 }
 .overview-left h4{
-    /*var(--ffRoboto)*/
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -284,7 +283,6 @@ div.pop-reg-header p{
     color: #A4A4A3;;
     background-color: black;
     font-size: 18px;
-    /*border: 1px solid black;*/
     border-radius: 5px;
     padding: 0 10px;
 }
@@ -320,7 +318,6 @@ div.pop-reg-header p{
 .card-one, .card-two{
     width: 360px;
     height: 211px;
-    /*padding-left: 15px;*/
     background-color: #BCBCBC;
     background-image: url("../assets/img/Visa.png"), url("../assets/img/Mastercard.png");
     background-position: 89% 15%, 89% 35%;
@@ -349,7 +346,6 @@ div.pop-reg-header p{
 }
 
 .card-one input::-webkit-inner-spin-button {
-    /*-webkit-appearance: none;*/
     width: 25px;
     opacity: 1;
     display: block;
@@ -368,13 +364,9 @@ div.pop-reg-header p{
     padding-left: 10px;
 }
 
-
-
-
 .card-exp-holder-name{
     width: 320px;
 }
-
 
 .card-two-wrapp{
     text-align: center;
@@ -441,14 +433,6 @@ div.pop-reg-header p{
     top: 0;
     left: 0;
     position: fixed;
-    /*overflow-y: scroll;*/
-    /*overflow: paged-y-controls;*/
-    /*overflow-y: scroll;*/
-    /*max-width: inherit*/
-
-    /*width: 100%;*/
-    /*max-width: inherit; !* наследуется значение родителя, а именно 30em *!*/
-    /*overflow-y: scroll;*/
 }
 
 #cover-div {
@@ -460,18 +444,14 @@ div.pop-reg-header p{
     bottom: 0;
     right: 0;
     width: inherit;
-    /*height: 950px;*/
     height: 100%;
-    /*visibility: hidden;*/
     display: none;
     opacity: 0.5;
-    /*overflow-y: scroll;*/
 }
 
 @media (max-width: 1024px) {
     .pop-container {
         max-width: 1024px;
-        /*left: 0; !* убрать*!*/
         top: 0;
         overflow: auto;
         height: 85%;
@@ -555,7 +535,7 @@ div.pop-reg-header p{
     .card-two {
         position: RELATIVE;
         margin-top: 20px;
-        top: 0px;
+        top: 0;
         left: 0;
     }
     .pop-btn-book {
@@ -577,88 +557,3 @@ div.pop-reg-header p{
 }
 
 
-
-/* ********************************************************************** */
-
-/*вставил свой значек в дату - вместо стокового - вместо знака календарь и знака время - вставил свою стрелку
-id="pop-date"  and id="pop-time"
-*/
-
-/*
-id="pop-time"
-По инпуту время <input type="text" name="time" id="pop-time" value="Time" onfocus="this.type='time'">
-реализована обманка - сечало - показано тип инпута- текст-...
-!!!! но при наведении - тип меняется на time
-*/
-
-
-/*.pop-date-time input[type="date"]::-webkit-input-placeholder{*/
-/*    left:20px;*/
-/*    padding-left: 50px;*/
-/*    font-size: 18px;*/
-/*}*/
-
-/*спрятал стрелку-вниз инпута time*/
-/*.pop-date-time input[type="time"]::-webkit-calendar-picker-indicator{*/
-/*    !*background-image: url('../assets/img/arrow-select.png');*!*/
-/*    !*background-origin: content-box;*!*/
-/*    !*display:none;*!*/
-/*    !*visibility: hidden !important;*!*/
-/*}*/
-
-/*.pop-date-time input[type="date"]::-webkit-datetime-edit-fields-wrapper{*/
-/*    width: 50px;*/
-/*}*/
-
-/* управление родным отражение даты - когда вместо родного показана надпись ДАТА - и когда нажимаешь отражается
-дата - выбираешь свою дату// */
-
-/*потсавил свою надпись*/
-/*.pop-date-time input[type="date"]::before {*/
-/*    content: 'Date';*/
-/*    position: absolute;*/
-/*    left: 45px;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 18px;*/
-/*    line-height: 21px;*/
-/*    !* identical to box height *!*/
-/*    color: #030303;*/
-
-/*}*/
-
-
-
-
-/*тайм надпись прячем*/
-/*.pop-date-time input[type="time"]::-webkit-datetime-edit-fields-wrapper {*/
-/*    display: none;*/
-/*    width: 25px;*/
-/*}*/
-/*потсавил свою надпись в тайм*/
-/*.pop-date-time input[type="time"]::before {*/
-/*    content: 'Time';*/
-/*    position: absolute;*/
-/*    left: 45px;*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 18px;*/
-/*    line-height: 21px;*/
-/*    color: #030303;*/
-/*}*/
-
-/*.card-number input::-webkit-outer-spin-button,*/
-/*.card-number input::-webkit-inner-spin-button {*/
-/*    appearance: auto;*/
-/*    opacity: 1*/
-/*;*/
-/* display: none; <- Crashes Chrome on hover */
-/*-webkit-appearance: auto;*/
-/*margin: 0;*/
-/* <-- Apparently some margin are still there even though it's hidden */
-/*}*/
-
-/*.card-exp-date input[type="number"]::-webkit-outer-spin-button,*/
-/*.card-exp-date input[type="number"]::-webkit-inner-spin-button {*/
-/*    display: none;*/
-/*}*/

@@ -19,11 +19,6 @@ function VideoSlider(){
     `
     });
 
-    // let cloneFirst = videoPlayList[0]
-    // let cloneLast = videoPlayList[4]
-    // videoPlayList.unshift(cloneLast)
-    // videoPlayList.push(cloneFirst)
-    // console.log(videoPlayList)
     // движение slider
 // this move
 // // let videoPlaylistWrapper = document.querySelector('.video-playlist-wrapper')
@@ -43,8 +38,6 @@ function VideoSlider(){
 
 
     let index = 0
-
-
 
     function moveVideoSliderLeft(){
         let videoPlaylistSlider = document.querySelector('.play-list-slider')
@@ -112,7 +105,7 @@ function VideoSlider(){
         playerVideoScreen.poster = `assets/video/poster${index}.jpg`
         let videoPlayerSource =  document.querySelector("#video-player-source")
         videoPlayerSource.setAttribute("src",  `assets/video/video${index}.mp4`)
-        console.log(videoPlayerSource)
+        // console.log(videoPlayerSource)
         playerVideoScreen.load();
         bigButtonPlay.style.display = ''
     }
