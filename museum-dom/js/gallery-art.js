@@ -29,8 +29,25 @@ for (let i = 0; i <arrGalleryArtMain.length; i += array_size) {
 }
 
 let galleryArt = document.querySelector(".picture-inner-container")
-arrGalleryArtMain.forEach( item => (
+
+//
+let delay = 500
+let dur = 1000
+
+
+// for (let i = 0; i < arrGalleryArtMain.length; i++ ) {
+//     galleryArt.innerHTML += `
+//     <img src="assets/img/gallery/galery${arrGalleryArtMain[i]}.jpg" loading="lazy" alt="img-gallery${arrGalleryArtMain[i]}">
+// `
+//     delay+=100
+//     dur+=100
+// }
+
+for (let i = 0; i < arrGalleryArtMain.length; i++ ) {
+
     galleryArt.innerHTML += `
-    <img src="assets/img/gallery/galery${item}.jpg" loading="lazy" alt="img-gallery${item}">
+    <img src="assets/img/gallery/galery${arrGalleryArtMain[i]}.jpg" data-aos="zoom-in-up"  data-aos-delay="${delay}" data-aos-duration="${dur}"  loading="lazy" alt="img-gallery${arrGalleryArtMain[i]}">
 `
-))
+    delay+=100
+    dur+=100
+}

@@ -1,4 +1,6 @@
 //https://www.youtube.com/watch?v=K3E1OfQuJ0Q
+// const sliderWindow = document.querySelector('.slider')
+// console.log(sliderWindow)
 const sliderCurrentNum = document.querySelector('.slider-current-num')
 const prev = document.querySelector('.btn-left')
 const next = document.querySelector('.btn-right')

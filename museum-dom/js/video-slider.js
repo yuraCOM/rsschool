@@ -108,6 +108,11 @@ function VideoSlider(){
         // console.log(videoPlayerSource)
         playerVideoScreen.load();
         bigButtonPlay.style.display = ''
+        littleButtonPlay.src = "./assets/img/play.png";
+        skipVideoProgressLine()
+
+
+
     }
 
 }

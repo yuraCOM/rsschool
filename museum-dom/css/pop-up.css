@@ -61,14 +61,20 @@
 .pop-date-time input{
     box-sizing: border-box;
     width: 190px;
-    padding: 0 14px 0 15px;
+    padding: 0 14px 0 40px;
     position: relative;
 
 }
 /* input date - change icon from background*/
 #pop-date {
+    cursor: pointer;
     margin-right: 20px;
     background: url("../assets/img/date.png") no-repeat 15px 14px, url('../assets/img/arrow-select.png') no-repeat 154px 12px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: var(--ffRoboto);
+    font-style: var(--fStyleNormal);
 }
 
 /* спрятал родной значек календаря который справа от даты*/
@@ -79,13 +85,29 @@
 /*#pop-time спрятал родной иконку -время- которяая справа от времени */
 #pop-time::-webkit-calendar-picker-indicator{
     background: url("..") no-repeat;
+    /*display: none;*/
+}
+#pop-time::-webkit-calendar-picker-indicator::marker{
+    display: none;
 }
 
 #pop-time{
-    padding-left: 40px;
-    font-size: 18px;
+    appearance: none;
+    font-weight: 400;
     line-height: 21px;
+    font-family: var(--ffRoboto);
+    font-style: var(--fStyleNormal);
+    color: gray;
+    box-sizing: border-box;
+    height: 45px;
+    width: 190px;
+    cursor: pointer;
+    border: 1px solid #030303;
+    box-shadow: 1px 1px 1px #030303;
+    padding-left: 60px;
+    font-size: 18px;
     background: url("../assets/img/Time.png") no-repeat 15px 14px, url('../assets/img/arrow-select.png') no-repeat 153px 13px;
+
 }
 
 /* input date #pop-date placeholder меняю шрифт и управялю им  */
@@ -286,6 +308,13 @@ div.pop-reg-header p{
     border-radius: 5px;
     padding: 0 10px;
 }
+.pop-total .b-price, .pop-total .s-price{
+    color: black;
+    background: none;
+    border-radius: 0;
+    font-size: 22px;
+    padding: 0
+}
 .count-total .underline-title::after{
     bottom: -9px;
 
@@ -420,9 +449,8 @@ div.pop-reg-header p{
 }
 
 .pop-container{
-
     z-index: 10;
-    position: absolute;
+    position: absolute; 
     top: 44px;
     left: -320%;
     background-color: #ffffff;
@@ -491,6 +519,7 @@ div.pop-reg-header p{
         background: url(../assets/img/date.png) no-repeat 15px 14px, url(../assets/img/arrow-select.png) no-repeat 215px 12px;
     }
     #pop-time {
+        width: 251px;
         background: url("../assets/img/Time.png") no-repeat 15px 14px, url('../assets/img/arrow-select.png') no-repeat 215px 13px;
     }
     .pop-contact select {
@@ -542,6 +571,7 @@ div.pop-reg-header p{
         margin-top: 40px;
     }
     #pop-date, #pop-time {
+        margin-bottom: 20px;
         background: url(../assets/img/date.png) no-repeat 15px 14px, url(../assets/img/arrow-select.png) no-repeat 325px 12px;
     }
     .card-two-wrapp {
@@ -554,6 +584,17 @@ div.pop-reg-header p{
     }
 
 
+}
+
+@media (max-width: 360px) {
+
+    .sum-total {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .card-one, .card-two {
+        background-position: 97% 15%, 97% 30%;
+    }
 }
 
 

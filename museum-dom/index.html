@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Museum</title>
+
     <link href="assets/favicon.ico" rel="icon">
     <link href="css/reset.css" rel="stylesheet" />
+<!--    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="css/var.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/pop-up.css">
     <link rel="stylesheet" href="css/ripple.css">
+<!--    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />-->
+
+
 
 
 </head>
@@ -56,16 +63,16 @@
                         <li><a href="#art-gallery">Gallery</a></li>
                         <li><a href="#tickets">Tickets</a></li>
                         <li><a href="#contacts">Contacts</a></li>
-                        <div class="pop-img-768">
+                        <li class="pop-img-768">
                             <img src="assets/img/pop-menu-786img1.png" alt="pop-menu-786img1">
                             <img src="assets/img/pop-menu-786img2.png" alt="pop-menu-786img2">
                             <img src="assets/img/pop-menu-786img3.png" alt="pop-menu-786img3">
-                        </div>
-                        <div class="pop-img-420">
+                        </li>
+                        <li class="pop-img-420">
                             <img src="assets/img/pop420px01.jpg" alt="pop-menu-786img1">
                             <img src="assets/img/pop420px02.jpg" alt="pop-menu-786img2">
                             <img src="assets/img/pop420px03.jpg" alt="pop-menu-786img3">
-                        </div>
+                        </li>
                     </ul>
 
                 </nav>
@@ -166,10 +173,10 @@
                     <div class="video-control">
                         <img class="play" id="little-play" src="./assets/img/play.png" alt="play">
 <!--                        rewind-video-->
-                        <input class="control-input video-length-control" type="range" value="54" min="0" max="100" step="1">
+                        <input class="control-input video-length-control" type="range" value="0" min="0" max="100" step="1">
                         <img class="volume"  id="volume-btn" src="./assets/img/volume.png" alt="volume">
 <!--                        volume-range-->
-                        <input class=" volume-range control-input video-sound-control " type="range" value="50" min="0" max="100" step="1">
+                        <input id='volume-range' class="volume-range control-input video-sound-control " type="range" value="0.5" min="0" max="1" step="0.1">
                         <img class="full-scr" id="full-scr" src="./assets/img/full.png" alt="left">
                     </div>
                 </div>
@@ -195,7 +202,7 @@
             <div class="container">
                 <h2 class="section-title-dark  style-title">Art Gallery</h2>
                 <div class="picture-container">
-                    <div class="picture-inner-container">
+                    <div class="picture-inner-container" >
 <!--                        <img src="assets/img/gallery/galery1.jpg" alt="">-->
                     </div>
                 </div>
@@ -244,7 +251,7 @@
                             </div>
 
                         </div>
-                        <h4 class="total">Total €220</h4>
+                        <h4 class="total">Total €<span class="total-span">0</span></h4>
                         <button class="buy-now style-text ripple" >Buy Now</button>
                     </div>
                 </div>
@@ -261,34 +268,58 @@
                             <div class="pop-date-time flex-row">
                                 <label for="pop-date">
                                     <!--                        тут заменил плейсхолдер data id="pop-date" placeholder="Date" -->
-                                    <input placeholder="Date" id="pop-date" type="text" onfocus="(this.type = 'date')"  >
+                                    <input required placeholder="Date" id="pop-date" type="text"  onfocus="(this.type = 'date')"  >
                                     <!--                        <input  type="date" id="pop-date"  placeholder="Date" data-date-format="" value="" >-->
                                 </label>
                                 <!--                    id="pop-time"-->
                                 <!--                    По инпуту время <input type="text" name="time" id="pop-time" value="Time" onfocus="this.type='time'">-->
                                 <!--                    реализована обманка - сечало - показано тип инпута- текст-...-->
                                 <!--                    !!!! но при наведении - тип меняется на time-->
-                                <label for="pop-time">
-                                    <input type="text" name="time" id="pop-time" value="Time" onfocus="this.type='time'">
+                                <label for="pop-time" title="time from 9:00 to 18:00">
+                                    <select required id="pop-time" name="pop-time-value" >
+<!--                                        <option disabled selected hidden >Time</option>-->
+                                        <option value="">Time</option>
+                                        <option value="09:30">09:00</option>
+                                        <option value="09:30">09:30</option>
+                                        <option value="10:00">10:00</option>
+                                        <option value="10:30">10:30</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="15:30">15:30</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="16:30">16:30</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                    </select>
+<!--                                    <input type="text" name="time" id="pop-time" value="Time" list="time-list"-->
+<!--                                           onfocus="type='time'" >-->
                                 </label>
                             </div>
                             <div class="pop-contact">
                                 <label for="name">
-                                    <input type="text" id="name" class="pop-name pop-input" placeholder="Name">
+                                    <input type="text" id="name" class="pop-name pop-input" placeholder="Name" required>
                                 </label>
                                 <label for="email">
-                                    <input type="email" id="email" class="pop-email pop-input" placeholder="E-mail">
+                                    <input type="email" id="email" class="pop-email pop-input" placeholder="E-mail" required>
                                 </label>
                                 <label for="tel">
-                                    <input type="tel" id="tel" class="pop-tel pop-input" placeholder="Phone">
+                                    <input type="tel" id="tel" class="pop-tel pop-input" placeholder="Phone" required>
                                 </label>
                                 <label for="ticket-type">
                                     <select id="ticket-type"  name="ticket-choice">
                                         <!--                        <option value="" selected disabled hidden>Choose here</option>-->
                                         <option disabled selected hidden >Ticket Type</option>
-                                        <option value="Permanent">Permanent exhibition</option>
-                                        <option value="Temporary">Temporary exhibition</option>
-                                        <option value="Combined">Combined Admission</option>
+                                        <option class="Choice1" value="Permanent">Permanent exhibition</option>
+                                        <option class="Choice2" value="Temporary">Temporary exhibition</option>
+                                        <option class="Choice3" value="Combined">Combined Admission</option>
                                     </select>
                                 </label>
 
@@ -297,7 +328,7 @@
                                 <h6 class="style-title underline-title">Entry ticket</h6>
                                 <div class="amount-count-pop">
                                     <div class="basic-ticket flex-row">
-                                        <p class="style-text">Basic 18+ (20 &#8364;)</p>
+                                        <p class="style-text">Basic 18+ (<span class="b-price">20</span> &#8364;)</p>
                                         <div class="basic">
                                             <button type="button" onclick="this.nextElementSibling.stepDown()">
                                                 <img src="assets/img/minus.png" alt="minus"></button>
@@ -307,7 +338,7 @@
                                         </div>
                                     </div>
                                     <div class="senior-ticket flex-row">
-                                        <p class="style-text">Senior 65+ (10 &#8364;)</p>
+                                        <p class="style-text">Senior 65+ (<span class="s-price">10</span> &#8364;)</p>
                                         <div class="senior">
 <!--                                            <label for="pop-senior"></label>-->
                                             <button type="button" onclick="this.nextElementSibling.stepDown()"><img src="assets/img/minus.png" alt="minus"></button>
@@ -325,8 +356,8 @@
                                     <div class="overview-left">
                                         <h3>Overview</h3>
                                         <h4>Tour to Louvre</h4>
-                                        <p class="overview-date">Friday, August 19</p>
-                                        <p class="overview-time">16 : 30</p>
+                                        <p class="overview-date">dd : mm : yy</p>
+                                        <p class="overview-time">hh : mm</p>
                                         <p class="overview-exhibition">Temporary exhibition</p>
 
 
@@ -338,16 +369,16 @@
                                 <div class="pop-total">
                                     <div class="count-total flex-col">
                                         <div class="count-basic flex-row">
-                                            <p><span class="qty-basic">2</span> Basic (20 &#8364;)</p>
-                                            <p class="total-basic">40 &#8364;</p>
+                                            <p><span class="qty-basic">2</span> Basic (<span class="b-price">20</span> &#8364;)</p>
+                                            <p class="total-basic over-right-basic">40 &#8364;</p>
                                         </div>
                                         <div class="count-senior flex-row underline-title">
-                                            <p><span class="qty-senior">2</span> Senior (10 &#8364;)</p>
-                                            <p class="total-senior">20 &#8364;</p>
+                                            <p><span class="qty-senior">2</span> Senior (<span class="s-price">10</span> &#8364;)</p>
+                                            <p class="total-senior over-right-senior">20 &#8364;</p>
                                         </div>
                                         <div class="sum-total flex-row">
                                             <h3>Total:</h3>
-                                            <h3>60 &#8364;</h3>
+                                            <h3 id="over-sum-total">60 &#8364;</h3>
                                         </div>
                                     </div>
                                     <div class="pop-card-pay">
@@ -355,14 +386,14 @@
                                             <div class="card-one-wrapp">
                                                 <p>Card number</p>
                                                 <label>
-                                                    <input class="card-number" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
+                                                    <input required class="card-number" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
                                                 </label>
                                                 <p>Expiration date</p>
                                                     <input class="card-exp-date" type="number" min="1" max="31" value="1">
                                                     <input class="card-exp-date" type="number" min="2021" value="2021">
                                                 <p>Cardholder name</p>
                                                 <label>
-                                                    <input class="card-exp-holder-name" type="text">
+                                                    <input required class="card-exp-holder-name" type="text">
                                                 </label>
                                             </div>
                                         </div>
@@ -370,7 +401,7 @@
                                             <div class="card-two-wrapp">
                                                 <p>CVC/CVV</p>
                                                 <label for="cvv"></label>
-                                                <input id="cvv" name="cvv" type="number">
+                                                <input required id="cvv" name="cvv" type="number">
                                                 <p>The last <br>
                                                     3 or 4 digits <br>
                                                     on back <br>
@@ -379,7 +410,7 @@
                                         </div>
                                     </div>
                                     <div class="pop-btn-book-wrapp">
-                                        <button class="pop-btn-book">Book</button>
+                                        <button type="submit" class="pop-btn-book">Book</button>
                                     </div>
 
                                 </div>
@@ -457,7 +488,7 @@
     </footer>
     <div id="cover-div" class="modal"></div>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script  src="js/data.js"></script>
 <script  src="index.js"></script>
 <script  src="js/slider.js"></script>
@@ -467,6 +498,8 @@
 <script  src="js/gallery-art.js"></script>
 <script  src="js/ripple.js"></script>
 <script src="js/pop-up-script.js"></script>
+
+
 
 
 
