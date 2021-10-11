@@ -477,6 +477,13 @@ div.pop-reg-header p{
     opacity: 0.5;
 }
 
+.pop-contact p.info-warn  {
+    position: absolute;
+    background: red;
+    padding: 15px;
+    font-size: 25px;
+}
+
 @media (max-width: 1024px) {
     .pop-container {
         max-width: 1024px;

@@ -100,7 +100,7 @@ for ( let i = 0; i < dots.length; i++){
 }
 
 //запуск слайд-шоу
-// let timeSl = setInterval(nextSlide, setTimeInterval)
+let timeSl = setInterval(nextSlide, setTimeInterval)
 
 //очистка слайд-шоу и заново запуск через время
 function clearIntervalSlider(){

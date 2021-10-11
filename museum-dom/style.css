@@ -700,6 +700,7 @@ to{
 .picture-inner-container img{
     width: 100%;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .picture-inner-container img:first-child, .picture-inner-container img:nth-child(11){
@@ -2195,4 +2196,8 @@ ul li.pop-img-420::after{
         background-position: 97% 15%, 97% 30%;
     }
 }
+
+
+
+
 

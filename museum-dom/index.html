@@ -268,7 +268,7 @@
                             <div class="pop-date-time flex-row">
                                 <label for="pop-date">
                                     <!--                        тут заменил плейсхолдер data id="pop-date" placeholder="Date" -->
-                                    <input required placeholder="Date" id="pop-date" type="text"  onfocus="(this.type = 'date')"  >
+                                    <input required placeholder="Date" min="2021-10-01" id="pop-date" type="text"  onfocus="(this.type = 'date')"  >
                                     <!--                        <input  type="date" id="pop-date"  placeholder="Date" data-date-format="" value="" >-->
                                 </label>
                                 <!--                    id="pop-time"-->
@@ -305,7 +305,7 @@
                             </div>
                             <div class="pop-contact">
                                 <label for="name">
-                                    <input type="text" id="name" class="pop-name pop-input" placeholder="Name" required>
+                                    <input type="text" name='name' id="name" class="pop-name pop-input" placeholder="Name" >
                                 </label>
                                 <label for="email">
                                     <input type="email" id="email" class="pop-email pop-input" placeholder="E-mail" required>
