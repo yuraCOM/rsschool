@@ -46,8 +46,12 @@ let dur = 1000
 for (let i = 0; i < arrGalleryArtMain.length; i++ ) {
 
     galleryArt.innerHTML += `
-    <img src="assets/img/gallery/galery${arrGalleryArtMain[i]}.jpg" data-aos="zoom-in-up"  data-aos-delay="${delay}" data-aos-duration="${dur}"  loading="lazy" alt="img-gallery${arrGalleryArtMain[i]}">
+    <img  src="assets/img/gallery/galery${arrGalleryArtMain[i]}.jpg" data-aos="zoom-in-up"  data-aos-delay="${delay}" data-aos-duration="${dur}"  loading="lazy" alt="img-gallery${arrGalleryArtMain[i]}">
+    
+    
 `
     delay+=100
     dur+=100
 }
+
+

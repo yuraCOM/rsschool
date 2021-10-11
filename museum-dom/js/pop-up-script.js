@@ -24,3 +24,4 @@ window.onclick = function(event) {
         document.querySelector('.pop-container').classList.remove('active')
     }
 }
+
